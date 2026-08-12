@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Mangal Murati General Store</title>
+<style>
+*{box-sizing:border-box}body{margin:0;font-family:Arial,sans-serif;background:#f5f7f2;color:#222}
+header{background:#075b32;color:#fff;text-align:center;padding:28px 16px}
+header h1{margin:0;font-size:30px}header p{margin:7px 0}
+.container{max-width:1000px;margin:auto;padding:20px}
+.info{background:#fff;border-radius:16px;padding:18px;margin-bottom:20px;box-shadow:0 2px 12px #0001}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:16px}
+.card{background:#fff;border-radius:16px;padding:18px;box-shadow:0 2px 12px #0001;text-align:center}
+.icon{font-size:40px}.card h3{margin:8px 0;font-size:20px}.price{font-size:22px;font-weight:bold;color:#075b32;margin:10px}
+button{border:0;border-radius:10px;padding:12px 15px;background:#20b957;color:#fff;font-weight:bold;cursor:pointer;width:100%}
+.note{font-size:14px;color:#666}.other{background:#fff;border-radius:16px;padding:20px;margin-top:24px}
+.whatsapp{position:fixed;right:18px;bottom:18px;background:#20b957;color:#fff;padding:14px 18px;border-radius:30px;text-decoration:none;font-weight:bold;box-shadow:0 3px 12px #0003}
+footer{text-align:center;padding:28px;color:#666}
+</style></head>
+<body>
+<header><h1>🛒 Mangal Murati General Store</h1><p>आपकी सेवा में सदैव तत्पर</p>
+<p>📍 Kathiraon Lathiya, Near HP Petrol Pump</p><p>📞 9696924194</p></header>
+<div class="container">
+<div class="info"><h2>🛍️ हमारे सामान</h2><p>दिए गए दाम आपकी दुकान के बताए हुए दाम हैं।</p></div>
+<div class="grid"><div class="card"><div class="icon">🛍️</div><h3>Tata नमक</h3><p>1 kg</p>
+<div class="price">₹32</div><button onclick="order('Tata नमक - 1 kg - ₹32')">WhatsApp पर ऑर्डर</button></div>
+<div class="card"><div class="icon">🛍️</div><h3>Charminar दाल</h3><p>1 kg</p>
+<div class="price">₹120</div><button onclick="order('Charminar दाल - 1 kg - ₹120')">WhatsApp पर ऑर्डर</button></div>
+<div class="card"><div class="icon">🛍️</div><h3>चीनी</h3><p>1 kg</p>
+<div class="price">₹56</div><button onclick="order('चीनी - 1 kg - ₹56')">WhatsApp पर ऑर्डर</button></div>
+<div class="card"><div class="icon">🛍️</div><h3>चना</h3><p>1 kg</p>
+<div class="price">₹80</div><button onclick="order('चना - 1 kg - ₹80')">WhatsApp पर ऑर्डर</button></div>
+<div class="card"><div class="icon">🛍️</div><h3>भुना चना</h3><p>1 kg</p>
+<div class="price">₹100</div><button onclick="order('भुना चना - 1 kg - ₹100')">WhatsApp पर ऑर्डर</button></div>
+<div class="card"><div class="icon">🛍️</div><h3>मटर दाल</h3><p>1 kg</p>
+<div class="price">₹60</div><button onclick="order('मटर दाल - 1 kg - ₹60')">WhatsApp पर ऑर्डर</button></div>
+<div class="card"><div class="icon">🛍️</div><h3>Wheel / Nirma</h3><p>1 kg</p>
+<div class="price">₹80</div><button onclick="order('Wheel / Nirma - 1 kg - ₹80')">WhatsApp पर ऑर्डर</button></div>
+<div class="card"><div class="icon">🛍️</div><h3>Saloni सरसों तेल</h3><p>1 L Bottle</p>
+<div class="price">₹195</div><button onclick="order('Saloni सरसों तेल - 1 L Bottle - ₹195')">WhatsApp पर ऑर्डर</button></div></div>
+<div class="other"><h2>📦 अन्य किराना सामान</h2>
+<p>आटा, चावल, तेल, मसाले, बिस्कुट, साबुन, शैम्पू, नमकीन और अन्य रोज़मर्रा का सामान भी उपलब्ध है।</p>
+<p class="note">जिन items की कीमत आपने नहीं बताई है, उनका दाम अभी वेबसाइट पर नहीं डाला गया है।</p>
+<a class="whatsapp" style="position:static;display:inline-block;margin-top:8px" href="https://wa.me/919696924194?text=नमस्ते,%20मुझे%20अन्य%20किराना%20सामान%20के%20दाम%20जानने%20हैं।" target="_blank">💬 दाम पूछें</a>
+</div></div>
+<a class="whatsapp" href="https://wa.me/919696924194" target="_blank">💬 WhatsApp</a>
+<footer>© Mangal Murati General Store</footer>
+<script>function order(item){const msg="नमस्ते, Mangal Murati General Store से मुझे यह सामान चाहिए: "+item;window.open("https://wa.me/919696924194?text="+encodeURIComponent(msg),"_blank");}</script>
+</body></html>
